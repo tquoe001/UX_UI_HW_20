@@ -5,64 +5,81 @@
 <head>
     <title>Timothy Quoe's portfolio page</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 
 
-    <link href="css/about.css" type="text/css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    
 </head>
 
 <body>
     <!--Header-->
     
+    <header>
         <nav class="layer_1">
-            <div class = layer_2>
-            <div class="layer_3">
+            <div class="layer_2">
+                <div class="layer_3">
+                    <div class="layer_4_1">
+                        
+                        <a href="index.html">
+                            <img src="images/logoV.3.svg" id="logo" >
+                        </a>
 
 
-                <a href="index.html">
-                    <img src="images/Logo.V2svg.svg" id="logo" >
-                </a>
+                        <div class="layer_4_2 logo_annotation  off on">
+                            The logo is placed in the top-left corner to create memorable branding, give easy access
+                                to the homepage, and communicates the current website the user is on from a glance.
+                                
+                                <br><br>
+                                <a href="https://www.nngroup.com/articles/centered-logos/" class="citations">
+                                World Leaders in Research-Based User Experience, K. W. (2016, July 10). Centered Logos Hurt Website Navigation. Retrieved June 06, 2020, from https://www.nngroup.com/articles/centered-logos/
+                            </a>
+                        </div>
 
+                    </div>
 
-        </div>
+                </div>
 
-        <div class="layer_3">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="underline"><a href="about.html">About</a></li>
-                <li>Contact</li>
-                <li>Resume</li>
-            </ul>
-        </div>
-        </div>
+                <div class="layer_3">
+                    <div class="layer_4_1">
+
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="underline"><a href="about.html">About</a></li>
+                            <li>Resume</li>
+                            <button class="btn" type="button">Contact</button>
+                            
+                        </ul>
+
+                        <div class="layer_4_2 nav_annotations off on">
+                            A recognizable navigation pattern makes it easier for users to find what they need. It is important to maintain the visibility of system status heuristic, thus the current page is indicated by an underline.
+                            <br><br>
+                           <a href="https://uxmovement.com/navigation/5-common-design-mistakes-on-navigation-bar-buttons/" class="citations"> UX Movement, A. (2018, March 26). 5 Common Design Mistakes on Navigation Bar Buttons. Retrieved June 06, 2020, from https://uxmovement.com/navigation/5-common-design-mistakes-on-navigation-bar-buttons/
+                           </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </nav>
+    </header>
     
 
     <!--Main-->
     <!--Section 1-->
-    <section class="hero">
 
-
-        <div>
-            <div>
-                <h1>Timothy Quoe</h1>
-                <h3>User experience/ User interface designer</h3>
-            </div>
-        </div>
-        
-
-        <div class="center">
-            <img id=about_photo src="images/about_photo.png">
-        </div>
-
-    </section>
+    <main>
     <!--Section 2-->
     <section>
-        <div class="margin">
-            <h2 class="bold">Hey, call me Tim!</h2>
+        <div class="about_hero">
+            <h1 class="bold">Hey, call me Tim!</h1>
 
             <p>Before embarking on a career in design I worked at the Department of <span class="bold">State Hospitals —
                     Atascadero</span>, as a <span class="bold">psychiatric technician</span>. My mental health
@@ -76,13 +93,13 @@
         </div>
     </section>
     <!---section 3--->
-    <section class="margin margin_bottom">
+    <section class="margin_bottom">
         <h3 class="bold">My skills include:</h3>
         <div class="grid">
             <div>
                 <ul>
                     <li class="bold italics">Technical</li>
-                    <li>Adobe Creative Cloud<img class="icon_about" src="images/icons/adobe-creative-cloud-cc.svg"></li>
+                    <li>Adobe CC<img class="icon_about" src="images/icons/adobe-creative-cloud-cc.svg"></li>
                     <li>Invision<img class="icon_about" src="images/icons/invision.svg"></li>
                     <li>Figma<img class="icon_about" src="images/icons/figma-1.svg"></li>
                     <li>Sketch<img class="icon_about" src="images/icons/sketch-2.svg"></li>
@@ -113,36 +130,29 @@
         </div>
     </section>
 
+</main>
+
 
     <!--Footer-->
     <footer>
 
-        <div class="container_footer">
-            <div>
-                <img class="icon" src="images/icons/phone.png">
-            </div>
-            <div>
-                <p class="bold">Phone:</p>
-                <p>(626)214-6610</p>
-            </div>
-        </div>
+            
 
+          
+        <img class="icon" src="images/icons/email.svg">
         <div>
-            <img class="icon link linkedin" src="images/icons/linkedin.png">
+            <a href="https://www.linkedin.com/in/timothy-quoe"><img class=" link linkedin" src="images/icons/linkedin.png"></a>
         </div>
 
-        <div class="container_footer">
-            <div>
-                <img class="icon" src="images/icons/email.png">
-            </div>
+      
 
-            <div>
-                <p class="bold">Email:</p>
-                <p>tquoe001@ucr.edu</p>
-            </div>
-        </div>
 
-    </footer>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
 
 
 

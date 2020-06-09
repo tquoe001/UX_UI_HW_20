@@ -1,7 +1,16 @@
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 
 <head>
+
+    <link rel="shortcut icon" href="images/logoV.4.svg" />
     <title>Timothy Quoe's portfolio page</title>
+
+    <meta name="description" content="Portfolio page displaying Timothy Quoe's work">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
@@ -44,14 +53,18 @@
                     <div class="layer_4_1">
                         
                         <a href="index.html">
-                            <img src="images/Logo.V2svg.svg" id="logo" >
+                            <img src="images/logoV.3.svg" id="logo" >
                         </a>
 
 
-                        <div class="layer_4_2 logo_annotation off on">
-                            <p>The logo is placed in the top-left corner to create memorable branding, give easy access
-                                to the homepage, and communicates the current website the user is on from a glance
-                                (Whitenton, 2016).</p>
+                        <div class="layer_4_2 logo_annotation  off on">
+                            The logo is placed in the top-left corner to create memorable branding, give easy access
+                                to the homepage, and communicates the current website the user is on from a glance.
+                                
+                                <br><br>
+                                <a href="https://www.nngroup.com/articles/centered-logos/" class="citations">
+                                World Leaders in Research-Based User Experience, K. W. (2016, July 10). Centered Logos Hurt Website Navigation. Retrieved June 06, 2020, from https://www.nngroup.com/articles/centered-logos/
+                            </a>
                         </div>
 
                     </div>
@@ -64,13 +77,16 @@
                         <ul>
                             <li class="underline"><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li>Contact</li>
                             <li>Resume</li>
+                            <button class="btn" type="button">Contact</button>
+                            
                         </ul>
 
-                        <div class="layer_4_2 right off on">
-                            <p>A recognizable navigation pattern makes it easier for users to find what they need. The
-                                current page is indicated by an underline.</p>
+                        <div class="layer_4_2 nav_annotations off on">
+                            A recognizable navigation pattern makes it easier for users to find what they need. It is important to maintain the visibility of system status heuristic, thus the current page is indicated by an underline.
+                            <br><br>
+                           <a href="https://uxmovement.com/navigation/5-common-design-mistakes-on-navigation-bar-buttons/" class="citations"> UX Movement, A. (2018, March 26). 5 Common Design Mistakes on Navigation Bar Buttons. Retrieved June 06, 2020, from https://uxmovement.com/navigation/5-common-design-mistakes-on-navigation-bar-buttons/
+                           </a>
                         </div>
 
                     </div>
@@ -82,57 +98,62 @@
     <!--Main-->
     <!--Section 1-->
     <main>
-        <section class="hero layer_1">
+        <section class="hero">
+
+            
+            <div class="hero_message_container">
+
+                <div>
+
+                        <h1 id="hero_main_message">Do you need someone who is <span class="bold">deliberate</span> with design?</h1>
+                        
+                        
+                        <h2 id="hero_second_message"><button class="btn" type="button">Contact</button> this <span class="bold">open</span> and <span class="bold">considerate</span> designer!</h2>
 
 
-            <div>
-                <div class="layer_3">
-                    <div class="layer_4_1">
-                        <h1>Timothy Quoe</h1>
-                        <h3>User experience/ User interface designer</h3>
-                        <h2><span class="bold">Open</span> and <span class="bold">considerate</span> by nature and <span
-                                class="bold">Deliberate</span> by design.</h2>
-                        <div class="layer_4_2 middle off on">
-                            <p>Title, sub-title, and header are sperated by a clear hierarchy.
-                            </p>
-
-                            <p>
-                                Use of different font weights aid in creating hierarchy, as well as highlight important
-                                words to make it easier to parse. </p>
-
-                            <p>Remember to keep font to background contrast high to remain accessible to those with poor
-                                vision!</p>
-                        </div>
-                    </div>
                 </div>
                 <!--toggle-->
                 <div class="layer_3">
                     <div class="layer_4_1">
                         <div class="toggle_box">
-                            <p class="annotation_text">Design annotations</p>
+                            <div>
                             <label class="switch round">
                                 <input type="checkbox" id="annotation_toggle" name="annotation_toggle" value="checked">
                                 <span class="slider"></span>
                             </label>
+                            </div>
+
+                            <div>
+                            <p>Design annotations</p>
+                            </div>
                         </div>
 
                         <div>
-                            <p class="layer_4_2 bold">Hover above a grey bracket to see why I made each design decision!
+                            <p class="layer_4_2 bold">Hover above a grey bracket to see each design decision!
                             </p>
                         </div>
-                        <div class="layer_4_2 left off on">
-                            <p>The annotation toggle is used as the current call to action. As a designer, one needs to
+
+                        
+                        <div class="layer_4_2 toggle_annotations off on">
+
+                            <div>
+                            The annotation toggle is used here as the secondary call to action. As a designer, one needs to
                                 communicate design decisions. I wanted to emphasize that importance in my design
-                                process.
-                            </p>
-                            <p>It is given a border to draw more attention and a toggle is used to switch between the
-                                two different states:
-                            </p>
-                            <p>1.) The minimalistic default state.</p>
-                            <p>2.) The information rich annotated state.</p>
+                                process and give a sneak peak under the hood of the website!
+                            <br>
+                            <br>
+                            The toggle is used to switch between the two different states:
+                                <br>
+                                <br>
+                            1.) The minimalistic default state.
+                            <br>
+                            <br>
+                            2.) The information rich annotated state.</div>
                         </div>
 
                     </div>
+
+                    
 
 
                     <div class="mobile_only">
@@ -143,46 +164,34 @@
 
                 <!--toggle-->
             </div>
+            
 
-            <div class="center layer_3">
-                <div class="layer_4_1">
+            <div>
 
-                    <img id=main_photo src="images/main_photo.png">
 
-                    <div class="layer_4_2 middle top off on">
-                        <p>The picture sends gazes toward my name, priming recognition.</p>
-                        <p>It also adds a personal touch and peek into the life of the creator (Nielsen, 2010)!</p>
-                    </div>
+                    <img id=main_photo src="images/home_pic.gif">
 
-                </div>
+
+
             </div>
+
+      
 
 
 
         </section>
         <!--Section 2-->
-        <section class="case_studies">
-            <div class="container layer_3">
+        <section>
+            
+            <div class="container">
 
-                <div class="layer_4_1">
+                
                     <img class="link img_display" src="images/FDA.png">
-                    <div class="layer_4_2 img_annotation off on">
-                        <p>A large image display of a high fidelity version of the project gives a preview of the
-                            project as well as highlight the design. It is placed alongside a summary of the project to
-                            give context.</p>
-                    </div>
-                </div>
+      
 
 
-                <div class="layer_4_1">
-
-                    <div class="layer_4_2 bottom on off">
-                        <p>The content is cut off to indicate that there is more below the fold. This breaks the
-                            illusion of completeness (Flaherty, 2016).</p>
-                    </div>
-
-                    <div class="summary border_right">
-                        <p class="header">FDA governement website redesign — case study.
+                    <div class="summary border_summary">
+                        <p class="bold">FDA governement website redesign — case study.
                         </p>
                         <p>
                             The FDA website displays issues in consistency, hierarchy, and usability. I worked with a
@@ -196,11 +205,12 @@
 
                     </div>
                 </div>
-            </div>
-            <div class="container tab_top">
+        
 
-                <div class="summary border_left layer_3">
-                    <p class="header">Project Linus non-profit website redesign — case study.
+            <div class="container reverse">
+
+                <div class="summary border_summary">
+                    <p class="bold">Project Linus non-profit website redesign — case study.
                     </p>
                     <p>
                         The Project Linus website lacks proper messaging and transparency. I worked with a team of 4 to
@@ -208,61 +218,56 @@
                         a more cohesive theme and increase ease of use.
                     </p>
                     <p class="link">
-                        Read more
+                        <a href="caseStudy_1.html">Read more</a>
                     </p>
-                    <div class="layer_4_1">
-                        <div class="layer_4_2 read_more off on">
-                            <p>The read more link is colored blue and bolded to increase its salience as a call to
-                                action.</p>
-                        </div>
+                    
                     </div>
+
+                    <div>
+                        <a href="caseStudy_1.html"><img class="link img_display" src="images/project_linus.png"></a>
+                    </div>
+
                 </div>
-                <div>
-                    <img class="link img_display" src="images/project_linus.png">
-                </div>
+                
             </div>
         </section>
+
+
         <!--Footer-->
         <div class="layer_3">
             <div class="layer_4_1">
 
                 <div class="layer_4_2 footer_annotation off on">
-                    <p>During testing a prototype of this portolio page, users expected to find contact information in
-                        the footer. This design choice is common and can be seen on other websites (Fessenden, 2019).
-                    </p>
+                    During testing a prototype of this portolio page, users expected to find contact information in
+                        the footer. This design choice is common and can be seen on other websites. <br><br>
+                        <a class="citations" href="https://www.nngroup.com/articles/footers/">World Leaders in Research-Based User Experience, T. F. (2019, February 24). Web Page Footers 101: Design Patterns and When to Use Each. Retrieved June 06, 2020, from https://www.nngroup.com/articles/footers/</a>
+                    
                 </div>
 
             </div>
         </div>
-        <footer>
-
-            <div class="container_footer">
-                <div>
-                    <img class="icon" src="images/icons/phone.png">
-                </div>
-                <div>
-                    <p class="bold">Phone:</p>
-                    <p>(626)214-6610</p>
-                </div>
-            </div>
-
-            <div>
-                <img class="icon link linkedin" src="images/icons/linkedin.png">
-            </div>
-
-            <div class="container_footer">
-                <div>
-                    <img class="icon" src="images/icons/email.png">
-                </div>
-
-                <div>
-                    <p class="bold">Email:</p>
-                    <p>tquoe001@ucr.edu</p>
-                </div>
-            </div>
+        
     </main>
 
+        <footer>
+
+            
+
+          
+            <img class="icon" src="images/icons/email.svg">
+            <div>
+                <a href="https://www.linkedin.com/in/timothy-quoe"><img class=" link linkedin" src="images/icons/linkedin.png"></a>
+            </div>
+
+          
+    
+
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
