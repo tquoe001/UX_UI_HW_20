@@ -8,9 +8,10 @@
 
     <meta name="description" content="Portfolio page displaying Timothy Quoe's work">
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
@@ -46,24 +47,36 @@
 
 
     <!--Navigation-->
-    <header>
+    <header class="sticky">
         <nav class="layer_1">
             <div class="layer_2">
                 <div class="layer_3">
                     <div class="layer_4_1">
-                        
-                        <a href="index.html">
-                            <img src="images/logoV.3.svg" id="logo" >
-                        </a>
+
+                        <div id="logo_container">
+
+                            <div>
+                                <a href="index.html">
+                                    <img src="images/logoV.3.svg" id="logo">
+                                </a>
+                            </div>
+
+                            <div id="text_logo_container">
+                                <h4 class="bold">Timothy Quoe</h4>
+                                <h5 class="grey">UX/UI designer</h5>
+                            </div>
+                        </div>
 
 
                         <div class="layer_4_2 logo_annotation  off on">
                             The logo is placed in the top-left corner to create memorable branding, give easy access
-                                to the homepage, and communicates the current website the user is on from a glance.
-                                
-                                <br><br>
-                                <a href="https://www.nngroup.com/articles/centered-logos/" class="citations">
-                                World Leaders in Research-Based User Experience, K. W. (2016, July 10). Centered Logos Hurt Website Navigation. Retrieved June 06, 2020, from https://www.nngroup.com/articles/centered-logos/
+                            to the homepage, and communicates the current website the user is on from a glance.
+
+                            <br><br>
+                            <a href="https://www.nngroup.com/articles/centered-logos/" class="citations">
+                                World Leaders in Research-Based User Experience, K. W. (2016, July 10). Centered Logos
+                                Hurt Website Navigation. Retrieved June 06, 2020, from
+                                https://www.nngroup.com/articles/centered-logos/
                             </a>
                         </div>
 
@@ -78,15 +91,123 @@
                             <li class="underline"><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li>Resume</li>
-                            <button class="btn" type="button">Contact</button>
-                            
+                            <button class="btn" type="button" data-toggle="modal" data-target="#myModal">Contact</button>
+
                         </ul>
+                                    <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+  
+                  <!-- Modal content-->
+                  <div class="modal-content modal-lg">
+                    <div class="modal-header">
+
+                        
+
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      
+                    </div>
+                    <div class="modal-body">
+                      <!--Section: Contact v.2-->
+
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold">Let's start some dialogue!</h2>
+    <!--Section description-->
+    <p class="w-responsive mx-auto">I will get back to you in 1-2 buisness days.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">What would you like to say?</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-md-left">
+
+                <button class="btn" type="button"><a onclick="document.getElementById('contact-form').submit();">Send</a></button>
+                
+
+                <h5 class="grey">to <span class="bold">tquoe001@ucr.edu</span></h5>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+
+    </div>
+
+
+<!--Section: Contact v.2-->
+                    </div>
+                    
+                  </div>
+  
+                </div>
+              </div>
 
                         <div class="layer_4_2 nav_annotations off on">
-                            A recognizable navigation pattern makes it easier for users to find what they need. It is important to maintain the visibility of system status heuristic, thus the current page is indicated by an underline.
+                            A recognizable navigation pattern makes it easier for users to find what they need. It is
+                            important to maintain the visibility of system status heuristic, thus the current page is
+                            indicated by an underline.
                             <br><br>
-                           <a href="https://uxmovement.com/navigation/5-common-design-mistakes-on-navigation-bar-buttons/" class="citations"> UX Movement, A. (2018, March 26). 5 Common Design Mistakes on Navigation Bar Buttons. Retrieved June 06, 2020, from https://uxmovement.com/navigation/5-common-design-mistakes-on-navigation-bar-buttons/
-                           </a>
+                            <a href="https://uxmovement.com/navigation/5-common-design-mistakes-on-navigation-bar-buttons/"
+                                class="citations"> UX Movement, A. (2018, March 26). 5 Common Design Mistakes on
+                                Navigation Bar Buttons. Retrieved June 06, 2020, from
+                                https://uxmovement.com/navigation/5-common-design-mistakes-on-navigation-bar-buttons/
+                            </a>
                         </div>
 
                     </div>
@@ -100,15 +221,17 @@
     <main>
         <section class="hero">
 
-            
+
             <div class="hero_message_container">
 
                 <div>
 
-                        <h1 id="hero_main_message">Do you need someone who is <span class="bold">deliberate</span> with design?</h1>
-                        
-                        
-                        <h2 id="hero_second_message"><button class="btn" type="button">Contact</button> this <span class="bold">open</span> and <span class="bold">considerate</span> designer!</h2>
+                    <h1 id="hero_main_message">Do you need someone who is <span class="bold">deliberate</span> with
+                        design?</h1>
+
+
+                    <h2 id="hero_second_message"><button class="btn" type="button" data-toggle="modal" data-target="#myModal">Contact</button> this <span
+                            class="bold">open</span> and <span class="bold">considerate</span> designer!</h2>
 
 
                 </div>
@@ -117,14 +240,15 @@
                     <div class="layer_4_1">
                         <div class="toggle_box">
                             <div>
-                            <label class="switch round">
-                                <input type="checkbox" id="annotation_toggle" name="annotation_toggle" value="checked">
-                                <span class="slider"></span>
-                            </label>
+                                <label class="switch round">
+                                    <input type="checkbox" id="annotation_toggle" name="annotation_toggle"
+                                        value="checked">
+                                    <span class="slider"></span>
+                                </label>
                             </div>
 
                             <div>
-                            <p>Design annotations</p>
+                                <p>Design annotations</p>
                             </div>
                         </div>
 
@@ -133,27 +257,28 @@
                             </p>
                         </div>
 
-                        
+
                         <div class="layer_4_2 toggle_annotations off on">
 
                             <div>
-                            The annotation toggle is used here as the secondary call to action. As a designer, one needs to
+                                The annotation toggle is used here as the secondary call to action. As a designer, one
+                                needs to
                                 communicate design decisions. I wanted to emphasize that importance in my design
                                 process and give a sneak peak under the hood of the website!
-                            <br>
-                            <br>
-                            The toggle is used to switch between the two different states:
                                 <br>
                                 <br>
-                            1.) The minimalistic default state.
-                            <br>
-                            <br>
-                            2.) The information rich annotated state.</div>
+                                The toggle is used to switch between the two different states:
+                                <br>
+                                <br>
+                                1.) The minimalistic default state.
+                                <br>
+                                <br>
+                                2.) The information rich annotated state.</div>
                         </div>
 
                     </div>
 
-                    
+
 
 
                     <div class="mobile_only">
@@ -164,71 +289,73 @@
 
                 <!--toggle-->
             </div>
-            
+
 
             <div>
 
 
-                    <img id=main_photo src="images/home_pic.gif">
+                <img id=main_photo src="images/home_pic.gif">
 
 
 
             </div>
 
-      
+
 
 
 
         </section>
         <!--Section 2-->
         <section>
-            
+
             <div class="container">
 
-                
-                    <img class="link img_display" src="images/FDA.png">
-      
-
-
-                    <div class="summary border_summary">
-                        <p class="bold">FDA governement website redesign — case study.
-                        </p>
-                        <p>
-                            The FDA website displays issues in consistency, hierarchy, and usability. I worked with a
-                            partner to
-                            make consistent use of cards and buttons, as well as changes in how one would navigate the
-                            website.
-                        </p>
-                        <p class="link">
-                            Read more
-                        </p>
-
-                    </div>
+                <div>
+                    <a href="caseStudy_FDA.html"><img class="link img_display" src="images/FDA.png"></a>
                 </div>
-        
+                
+
+
+
+                <div class="summary border_summary">
+                    <h3 class="bold">FDA governement website redesign — case study.
+                    </h3>
+                    <p>
+                        The FDA website displays issues in consistency, hierarchy, and usability. I worked with a
+                        partner to
+                        make consistent use of cards and buttons, as well as changes in how one would navigate the
+                        website.
+                    </p>
+                    <p class="link">
+                        <a href="caseStudy_FDA.html">Read more</a>
+                    </p>
+
+                </div>
+            </div>
+
 
             <div class="container reverse">
 
                 <div class="summary border_summary">
-                    <p class="bold">Project Linus non-profit website redesign — case study.
-                    </p>
+                    <h3 class="bold">Project Linus website redesign — case study.
+                    </h3>
                     <p>
                         The Project Linus website lacks proper messaging and transparency. I worked with a team of 4 to
                         provide
                         a more cohesive theme and increase ease of use.
                     </p>
                     <p class="link">
-                        <a href="caseStudy_1.html">Read more</a>
+                        <a href="caseStudy_Projectlinus.html">Read more</a>
                     </p>
-                    
-                    </div>
-
-                    <div>
-                        <a href="caseStudy_1.html"><img class="link img_display" src="images/project_linus.png"></a>
-                    </div>
 
                 </div>
-                
+
+                <div>
+                    <a href="caseStudy_Projectlinus.html"><img class="link img_display" src="images/project_linus.png"></a>
+                </div>
+
+            </div>
+
             </div>
         </section>
 
@@ -239,35 +366,45 @@
 
                 <div class="layer_4_2 footer_annotation off on">
                     During testing a prototype of this portolio page, users expected to find contact information in
-                        the footer. This design choice is common and can be seen on other websites. <br><br>
-                        <a class="citations" href="https://www.nngroup.com/articles/footers/">World Leaders in Research-Based User Experience, T. F. (2019, February 24). Web Page Footers 101: Design Patterns and When to Use Each. Retrieved June 06, 2020, from https://www.nngroup.com/articles/footers/</a>
-                    
+                    the footer. This design choice is common and can be seen on other websites. <br><br>
+                    <a class="citations" href="https://www.nngroup.com/articles/footers/">World Leaders in
+                        Research-Based User Experience, T. F. (2019, February 24). Web Page Footers 101: Design Patterns
+                        and When to Use Each. Retrieved June 06, 2020, from
+                        https://www.nngroup.com/articles/footers/</a>
+
                 </div>
 
             </div>
         </div>
-        
+
     </main>
 
-        <footer>
+    <footer>
 
-            
 
-          
-            <img class="icon" src="images/icons/email.svg">
-            <div>
-                <a href="https://www.linkedin.com/in/timothy-quoe"><img class=" link linkedin" src="images/icons/linkedin.png"></a>
-            </div>
 
-          
-    
+
+        <img class="icon link" src="images/icons/email.svg" data-toggle="modal" data-target="#myModal">
+        <div>
+            <a href="https://www.linkedin.com/in/timothy-quoe"><img class=" link linkedin"
+                    src="images/icons/linkedin.png"></a>
+        </div>
+
+
+
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>

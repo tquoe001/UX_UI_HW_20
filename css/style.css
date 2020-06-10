@@ -111,8 +111,8 @@
 }
 
 .logo_annotation:hover {
-  width: 750%;
-  height: 200%;
+  width: 250%;
+  height: 250%;
 }
 
 .nav_annotations {
@@ -177,7 +177,7 @@
 
 .footer_annotation:hover {
   width: 50%;
-  height: 200px;
+  height: 180px;
 }
 
 .read_more:hover {
@@ -291,8 +291,14 @@ p {
 
 /* navigation */
 
+#logo_container{
+  display: flex;
+  align-items: flex-end;
+  
+}
+
 #logo {
-  width: 80px;
+  width: 65px;
   transition: opacity .4s ;
   padding-top: 10px;;
 }
@@ -300,6 +306,14 @@ p {
 #logo:hover {
   opacity: 75% ;
 
+}
+
+#text_logo_container {
+  padding-left: 10px;
+}
+
+.grey {
+  color: grey
 }
 
 header {
@@ -313,6 +327,7 @@ nav {
   display: flex;
   flex-direction: row;
 }
+
 
  nav li {
   display: inline-block;
@@ -349,6 +364,13 @@ h2 {
   font-size: 25px;
 }
 
+h4 {
+  font-size: 16px
+}
+
+h5 {
+  font-size: 12px;
+}
 
 #hero_main_message {
   font-weight: normal;
@@ -484,6 +506,7 @@ input:checked + .slider:before {
   cursor: pointer;
   color: #1956d8;
   transition: opacity .4s;
+  opacity: 70%;
   
 }
 
@@ -722,6 +745,7 @@ p {
 
 #laptopView {
     width: 80%;
+    margin: 0 auto;
 }
 #figma_invision {
   width: 10%;
@@ -843,7 +867,9 @@ p {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-
+.painpoint {
+  width: 100%;
+}
 #logo_change {
   display: flex;
   margin: 0 auto;
@@ -886,6 +912,14 @@ p {
   display: flex;
   margin: 0 auto;
   width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.casestudy_img_flow {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -1067,10 +1101,20 @@ html {
     font-size: 12px;
   }
 
-  
+  .casestudy_img_flow {
+    width: 100%;
+  }
 
   #face_photos {
     width: 100%;
+  }
+
+  #figma_invision{
+    width: 20%;
+  }
+
+  #text_logo_container {
+    display: none;
   }
 
   h2 {
