@@ -50,10 +50,7 @@
 
 }
 
-.layer_4_1 {
-  
 
-}
 
 
 .off {
@@ -279,6 +276,8 @@ button {
 
 p {
   padding-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .underline a{
@@ -355,6 +354,8 @@ h1 {
 
 h3 {
   font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   
 }
 
@@ -392,13 +393,13 @@ h5 {
 #main_photo {
  width: 50vh;
  border-radius: 100px;
- border
 }
 
 .toggle_box {
   display: flex;
   justify-content: start;
   align-items: center;
+  margin-top: 30px;
 
 }
 
@@ -423,7 +424,8 @@ h5 {
   display: inline-block;
   width: 80px;
   height: 40px;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* Hide default HTML checkbox */
@@ -481,7 +483,12 @@ input:checked + .slider:before {
 /* case study stuff */
 
 
-
+.design_mobile {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 5%;
+}
 
 .img_display {
   width: 80vh;
@@ -692,7 +699,7 @@ footer {
 
 h2 {   
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 section {
@@ -738,13 +745,13 @@ p {
 
 #title {
     display: flex;
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
     
 }
 
 #laptopView {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 #figma_invision {
@@ -1208,7 +1215,9 @@ html {
     padding: 0 !important;
   }
 
-
+  .design_mobile{
+    width: 100%;
+  }
   /*about section*/
   .about {
     justify-content: center;
