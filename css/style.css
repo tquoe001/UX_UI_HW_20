@@ -282,6 +282,7 @@ p {
 
 .click_directions {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
