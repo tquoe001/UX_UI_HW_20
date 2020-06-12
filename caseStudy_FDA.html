@@ -43,84 +43,175 @@
 <body>
   <!--Header-->
 
-  <header>
+  <header class="sticky">
     <nav class="layer_1">
-      <div class="layer_2">
-        <div class="layer_3">
-          <div class="layer_4_1">
+        <div class="layer_2">
+            <div class="layer_3">
+                <div class="layer_4_1">
 
-            <a href="index.html">
-              <img src="images/logoV.3.svg" id="logo">
-            </a>
+                    <div id="logo_container">
+
+                        <div>
+                            <a href="index.html">
+                                <img src="images/logoV.3.svg" id="logo">
+                            </a>
+                        </div>
+
+                        <div id="text_logo_container">
+                            <h4 class="bold">Timothy Quoe</h4>
+                            <h5 class="grey">UX/UI designer</h5>
+                        </div>
+                    </div>
 
 
-            <div class="layer_4_2 logo_annotation  off on">
-              The logo is placed in the top-left corner to create memorable branding, give easy access
-              to the homepage, and communicates the current website the user is on from a glance.
+                    <div class="layer_4_2 logo_annotation  off on">
+                        The logo is placed in the top-left corner to create memorable branding, give easy access
+                        to the homepage, and communicates the current website the user is on from a glance.
 
-              <br><br>
-              <a href="https://www.nngroup.com/articles/centered-logos/" class="citations">
-                World Leaders in Research-Based User Experience, K. W. (2016, July 10). Centered Logos Hurt Website
-                Navigation. Retrieved June 06, 2020, from https://www.nngroup.com/articles/centered-logos/
-              </a>
-            </div>
+                        <br><br>
+                        <a href="https://www.nngroup.com/articles/centered-logos/" class="citations">
+                            World Leaders in Research-Based User Experience, K. W. (2016, July 10). Centered Logos
+                            Hurt Website Navigation. Retrieved June 06, 2020, from
+                            https://www.nngroup.com/articles/centered-logos/
+                        </a>
+                    </div>
 
-          </div>
-
-        </div>
-
-        <div class="layer_3">
-          <div class="layer_4_1">
-
-            <ul>
-              <li class="underline"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>Resume</li>
-              <button class="btn" type="button" data-toggle="modal" data-target="#myModal">Contact</button>
-
-            </ul>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" role="dialog">
-              <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
-                  </div>
-                  <div class="modal-body">
-                    <p>Some text in the modal.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
                 </div>
 
-              </div>
             </div>
 
-          </div>
+            <div class="layer_3">
+                <div class="layer_4_1">
 
-          <!-- Nav annotations -->
+                    <ul>
+                        <li class="underline"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li>Resume</li>
+                        <button class="btn" type="button" data-toggle="modal" data-target="#myModal">Contact</button>
 
-          <div class="layer_4_2 nav_annotations off on">
-            A recognizable navigation pattern makes it easier for users to find what they need. It is important to
-            maintain the visibility of system status heuristic, thus the current page is indicated by an underline.
-            <br><br>
-            <a href="https://uxmovement.com/navigation/5-common-design-mistakes-on-navigation-bar-buttons/"
-              class="citations"> UX Movement, A. (2018, March 26). 5 Common Design Mistakes on Navigation Bar Buttons.
-              Retrieved June 06, 2020, from
-              https://uxmovement.com/navigation/5-common-design-mistakes-on-navigation-bar-buttons/
-            </a>
-          </div>
+                    </ul>
+                                <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
 
+              <!-- Modal content-->
+              <div class="modal-content modal-lg">
+                <div class="modal-header">
+
+                    
+
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  
+                </div>
+                <div class="modal-body">
+                  <!--Section: Contact v.2-->
+
+
+<!--Section heading-->
+<h2 class="h1-responsive font-weight-bold">Let's start some dialogue!</h2>
+<!--Section description-->
+<p class="w-responsive mx-auto">I will get back to you in 1-2 buisness days.</p>
+
+<div class="row">
+
+    <!--Grid column-->
+    <div class="col-md-9 mb-md-0 mb-5">
+
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <input type="text" id="name" name="name" class="form-control" >
+                        <label for="name" class="">Name</label>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control">
+                        <label for="email" class="">Email</label>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="md-form mb-0">
+                        <input type="text" id="subject" name="subject" class="form-control">
+                        <label for="subject" class="">Subject</label>
+                    </div>
+                </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-12">
+
+                    <div class="md-form">
+                        <textarea type="text" id="message" name="message" rows="4" class="form-control md-textarea"></textarea>
+                        <label for="message">What would you like to say?</label>
+                    </div>
+
+                </div>
+            </div>
+            <!--Grid row-->
+
+        </form>
+
+        <div class="text-md-left">
+
+            <button class="btn" type="button"><a onclick="validateForm();">Send</a></button>
+            
+
+            <h5 class="grey">to <span class="bold">tquoe001@ucr.edu</span></h5>
         </div>
-      </div>
-      </div>
+        <div class="status"></div>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+
+</div>
+
+
+<!--Section: Contact v.2-->
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+
+                    <div class="layer_4_2 nav_annotations off on">
+                        A recognizable navigation pattern makes it easier for users to find what they need. It is
+                        important to maintain the visibility of system status heuristic, thus the current page is
+                        indicated by an underline.
+                        <br><br>
+                        <a href="https://uxmovement.com/navigation/5-common-design-mistakes-on-navigation-bar-buttons/"
+                            class="citations"> UX Movement, A. (2018, March 26). 5 Common Design Mistakes on
+                            Navigation Bar Buttons. Retrieved June 06, 2020, from
+                            https://uxmovement.com/navigation/5-common-design-mistakes-on-navigation-bar-buttons/
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </nav>
-  </header>
+</header>
 
 
   <!--Main-->
@@ -207,7 +298,7 @@
 
       <h1 id="research" class="bold">Research</h1>
 
-      <h2 class="bold">Methodology</h2>
+      <h2>Methodology</h2>
 
       <p>We did a total of 15 remote user tests of the Food and Drug Administration website. Our participants were
         chosen from a pool of friends and family based on convenience. All individuals were middle class Californians in
@@ -464,17 +555,18 @@
 
 
 
-
-    <img class="icon" src="images/icons/email.svg">
+    <div class="footer_container">
+    <img class="icon link" src="images/icons/email.svg" data-toggle="modal" data-target="#myModal">
     <div>
-      <a href="https://www.linkedin.com/in/timothy-quoe"><img class=" link linkedin"
-          src="images/icons/linkedin.png"></a>
+        <a href="https://www.linkedin.com/in/timothy-quoe"><img class=" link linkedin"
+                src="images/icons/linkedin.png"></a>
     </div>
+</div>
+
+    <div id="copyright_bottom"><h5>Copyright © 2020 Timothy Quoe. All rights reserved.</h5></div>
 
 
-
-
-  </footer>
+</footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

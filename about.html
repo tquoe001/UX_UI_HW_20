@@ -77,8 +77,8 @@
                 <div class="layer_4_1">
 
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="underline"><a href="about.html">About</a></li>
+                        <li class="underline"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li>Resume</li>
                         <button class="btn" type="button" data-toggle="modal" data-target="#myModal">Contact</button>
 
@@ -109,6 +109,7 @@
 
     <!--Grid column-->
     <div class="col-md-9 mb-md-0 mb-5">
+
         <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
             <!--Grid row-->
@@ -117,7 +118,7 @@
                 <!--Grid column-->
                 <div class="col-md-6">
                     <div class="md-form mb-0">
-                        <input type="text" id="name" name="name" class="form-control">
+                        <input type="text" id="name" name="name" class="form-control" >
                         <label for="name" class="">Name</label>
                     </div>
                 </div>
@@ -153,7 +154,7 @@
                 <div class="col-md-12">
 
                     <div class="md-form">
-                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        <textarea type="text" id="message" name="message" rows="4" class="form-control md-textarea"></textarea>
                         <label for="message">What would you like to say?</label>
                     </div>
 
@@ -165,7 +166,7 @@
 
         <div class="text-md-left">
 
-            <button class="btn" type="button"><a onclick="document.getElementById('contact-form').submit();">Send</a></button>
+            <button class="btn" type="button"><a onclick="validateForm();">Send</a></button>
             
 
             <h5 class="grey">to <span class="bold">tquoe001@ucr.edu</span></h5>
@@ -213,7 +214,11 @@
     <!--Section 2-->
     <section>
         <div class="about_hero">
+
+
             <h1 class="bold">Hey, call me Tim!</h1>
+
+           
 
             <p>Before embarking on a career in design I worked at the Department of <span class="bold">State Hospitals —
                     Atascadero</span>, as a <span class="bold">psychiatric technician</span>. My mental health
@@ -225,7 +230,10 @@
                 I would love to hear yours!</p>
         </div>
         </div>
+        
     </section>
+
+    
     <!---section 3--->
     <section class="margin_bottom">
         <h3 class="bold">My skills include:</h3>
@@ -270,18 +278,20 @@
     <!--Footer-->
     <footer>
 
-            
 
-          
-        <img class="icon" src="images/icons/email.svg">
+
+        <div class="footer_container">
+        <img class="icon link" src="images/icons/email.svg" data-toggle="modal" data-target="#myModal">
         <div>
-            <a href="https://www.linkedin.com/in/timothy-quoe"><img class=" link linkedin" src="images/icons/linkedin.png"></a>
+            <a href="https://www.linkedin.com/in/timothy-quoe"><img class=" link linkedin"
+                    src="images/icons/linkedin.png"></a>
         </div>
+    </div>
 
-      
+        <div id="copyright_bottom"><h5>Copyright © 2020 Timothy Quoe. All rights reserved.</h5></div>
 
 
-</footer>
+    </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
