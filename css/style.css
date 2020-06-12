@@ -419,7 +419,19 @@ h5 {
 #main_photo {
  width: 50vh;
  border-radius: 100px;
+ transition: all 1s;
 }
+
+
+
+
+
+.quote {
+  display: absolute;
+  z-index: 1;
+  top: -30px;
+}
+
 
 .toggle_box {
   display: flex;
